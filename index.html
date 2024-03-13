@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <main class="text-center">
+        <div id="title-box" class="container">
+            <div class="d-flex flex-column vh-100 justify-content-center align-items-center">
+                <h1 class="fs-sm-1 fs-md-1 fw-bold my-4 my-md-5">Quote of the Day</h1>
+                <p class="fs-4 mb-3 mb-md-4">Press the button below to recieve a random quote!</p>
+                <button onclick="quoteRndIndex();" id="new-quote-btn" class="btn btn-primary py-md-3 px-md-5 mb-4 mb-md-5">New Quote</button>
+            </div>
+        </div>
+        <div id="qoute-card" class="d-none">
+            <div class="row align-items-center p-3 mx-3 shadow-lg rounded-3 mb-auto">
+                <div class="col-12 col-md-3">
+                    <div class="w-md-200px rounded-circle mx-auto"><img id="author-img" class="w-100 d-block rounded-circle" src alt></div>
+                </div>
+                <div class="col-12 col-md-9 d-flex flex-column ps-md-5">
+                    <p class="fs-1 mb-md-4 me-md-auto"><span id="quote-mark">&#x275D;</span><span id="quote-body" class="fs-4 ps-1"></span></p>
+                    <p class="fs-5 text-black-50 text-start">--<span id="quote-author"></span></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+div:has(>img) {
+    max-width: 5rem;
+}
+
+.row {
+    transition: 0.5s;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+.opacity-100 {
+    opacity: 1;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .fs-sm-1 {
+        font-size: 3rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .fs-md-1 {
+        font-size: 5rem;
+    }
+    .w-md-200px {
+        max-width: 12.5rem;
+    }
+}
